@@ -1,0 +1,18 @@
+.container{
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    .containerCard{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .containerDataGrid{
+        width: 70%;
+        margin: auto;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
