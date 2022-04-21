@@ -4,7 +4,7 @@ import "./index.css"
 import App from "./App"
 import reportWebVitals from "./reportWebVitals"
 // FIREBASE CONFIG
-import "./firebase/firebaseConfig"
+import "./config/firebase/firebaseConfig"
 // REDUX CONFIG
 import { store } from "./redux/store/store"
 import { Provider } from "react-redux"

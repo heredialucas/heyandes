@@ -19,7 +19,9 @@ module.exports = {
   },
   plugins: ["react"],
   rules: {
-    "react/prop-type": RULES.OFF,
     "react/react-in-jsx-scope": RULES.OFF,
+    "react/prop-types": RULES.OFF,
+    "react/react-props-type": RULES.OFF,
+    "no-unreachable-loop": RULES.OFF,
   },
 }

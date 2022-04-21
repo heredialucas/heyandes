@@ -4,10 +4,10 @@ import "./App.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 // COMPONENTS
-import Landing from "./pages/Landing"
-import NoPage from "./pages/NoPage"
-import Enterprises from "./pages/Enterprises"
-import EnterprisesDetail from "./pages/EnterprisesDetail"
+import Landing from "./pages/Landing/Landing"
+import NoPage from "./pages/NoPage/NoPage"
+import Enterprises from "./pages/Enterprises/Enterprises"
+import EnterprisesDetail from "./pages/EnterprisesDetail/EnterprisesDetail"
 
 function App() {
   return (
