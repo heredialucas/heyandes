@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/heyandes/static/css/main.02fbc35b.css",
+    "main.js": "/heyandes/static/js/main.f693b671.js",
+    "static/js/787.ce9f5b95.chunk.js": "/heyandes/static/js/787.ce9f5b95.chunk.js",
+    "index.html": "/heyandes/index.html",
+    "main.02fbc35b.css.map": "/heyandes/static/css/main.02fbc35b.css.map",
+    "main.f693b671.js.map": "/heyandes/static/js/main.f693b671.js.map",
+    "787.ce9f5b95.chunk.js.map": "/heyandes/static/js/787.ce9f5b95.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.02fbc35b.css",
+    "static/js/main.f693b671.js"
+  ]
+}
