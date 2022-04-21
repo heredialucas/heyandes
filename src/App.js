@@ -1,7 +1,7 @@
 // STYLES
 import "./App.scss"
 // REACT ROUTER
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { HashRouter, Routes, Route } from "react-router-dom"
 import { useSelector } from "react-redux"
 
 // COMPONENTS
@@ -14,7 +14,7 @@ function App() {
   const darkmode = useSelector((state) => state.darkmode.darkmode)
   return (
     <div className={darkmode && "App"}>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Landing />}>
             <Route index path="empresas" element={<Enterprises />} />
@@ -25,7 +25,7 @@ function App() {
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   )
 }

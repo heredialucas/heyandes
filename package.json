@@ -1,5 +1,4 @@
 {
-  "homepage": "https://heredialucas.github.io/heyandes",
   "name": "heyandes",
   "version": "0.1.0",
   "private": true,
@@ -29,9 +28,7 @@
     "lint": "eslint . --fix",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepare": "husky install",
-    "predeploy":"npm run build",
-    "deploy": "gh-pages -d build"
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -59,7 +56,6 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.2.0",
     "eslint-plugin-react": "^7.29.4",
-    "gh-pages": "^3.2.3",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.8",
     "prettier": "^2.6.2"
