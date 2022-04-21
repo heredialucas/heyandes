@@ -20,7 +20,7 @@ export default function finMaxMonth(array) {
     month.push(parseInt(e.day?.split("-")[1]))
   })
 
-  const res = months.map((e, index) => {
+  const monthsLength = months.map((e, index) => {
     const maxLength = []
     for (const m of month) {
       if (index === m) {
@@ -30,7 +30,7 @@ export default function finMaxMonth(array) {
     return maxLength
   })
 
-  res.forEach((e, index) => {
+  monthsLength.forEach((e, index) => {
     for (const i of months) {
       if (e.length > 0 && e[0] === i) {
         allMonths.push({

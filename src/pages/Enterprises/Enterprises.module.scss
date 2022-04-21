@@ -2,13 +2,24 @@
     justify-content: center;
     align-items: center;
     height: 70vh;
+    a{
+        text-decoration: none;     
+        color: #000;  
+        border: 1px solid #000;
+        padding: 2px 5px;
+        &:hover{
+            transition: .3s;
+            background: #000;
+            color: #fff;
+        }
+    }
     .containerCard{
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .containerDataGrid{
-        width: 70%;
+        width: 72%;
         margin: auto;
         height: 100%;
         display: flex;

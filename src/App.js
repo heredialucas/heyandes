@@ -1,7 +1,8 @@
 // STYLES
-import "./App.css"
+import "./App.scss"
 // REACT ROUTER
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { useSelector } from "react-redux"
 
 // COMPONENTS
 import Landing from "./pages/Landing/Landing"
@@ -10,8 +11,9 @@ import Enterprises from "./pages/Enterprises/Enterprises"
 import EnterprisesDetail from "./pages/EnterprisesDetail/EnterprisesDetail"
 
 function App() {
+  const darkmode = useSelector((state) => state.darkmode.darkmode)
   return (
-    <div className="App">
+    <div className={darkmode && "App"}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landing />}>
