@@ -8,7 +8,7 @@ function Card({ enterprises }) {
     const maxAgency = findMaxMonth(enterprises)
     return (
       <div className={style.Card}>
-        <h1>{maxAgency}</h1>
+        <h1>Mes Más Ventas</h1>
         <h3>{maxAgency}</h3>
       </div>
     )
