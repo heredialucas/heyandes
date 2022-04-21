@@ -1,0 +1,24 @@
+.App{
+    background-color: #000;
+    padding-bottom: 300px;
+    div{
+        padding: 1px;
+        background-color: #000;
+        color: aliceblue;
+        button{
+            color: aliceblue;
+        }
+        span{
+            color: aliceblue;
+        }
+        a{
+            color: aliceblue;
+            transition: .5s;
+            text-decoration: none;
+        }
+        a:hover{
+            transition: .5s;
+            text-decoration: underline;
+        }
+    }
+}

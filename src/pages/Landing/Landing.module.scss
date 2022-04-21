@@ -1,18 +1,54 @@
-.titleName{
-        font-size: 30px;
-        letter-spacing: 2px;
-        margin: 0;
+.container{
+    .containerHeader{
         background-color: rgb(165, 165, 165);
-        padding: 20px 40px;
-}
-.navLink{
-    display: inline-block;
-    font-size: 20px;
-    padding: 30px 90px;
-    text-decoration: none;
-    color: #000;
-    font-weight: 700;
-}
-.navLink:hover{
-    text-decoration: underline;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+         .titleName{
+             color: #000;
+                 font-size: 30px;
+                 letter-spacing: 2px;
+                 margin: 0;
+                 padding: 20px 40px;
+         }
+         .darkmode{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             text-align: center;
+             font-weight: 700;
+             background: #000;
+             color: #fff;
+             border: 2px solid #000;
+             border-radius: 5px;
+             width: 100px;
+             height: 40px;
+         }
+         .darkmode:hover{
+             cursor: pointer;
+         }
+    }
+    .navLinkDarkmode{
+        display: inline-block;
+        font-size: 20px;
+        padding: 30px 90px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 700;
+    }
+    .navLinkDarkmode:hover{
+        text-decoration: underline;
+    }
+    .navLink{
+        display: inline-block;
+        font-size: 20px;
+        padding: 30px 90px;
+        text-decoration: none;
+        color: #000;
+        font-weight: 700;
+    }
+    .navLink:hover{
+        text-decoration: underline;
+    }
+
 }
