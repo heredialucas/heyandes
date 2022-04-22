@@ -19,7 +19,7 @@ const Landing = () => {
   // GET ALL ENTERPRISES
   const dispatch = useDispatch()
   useEffect(() => {
-    return () => getAllEnterprises(dispatch)
+    getAllEnterprises(dispatch)
   }, [])
 
   // DARK MODE FUNCTION
@@ -35,12 +35,22 @@ const Landing = () => {
           <span>Dark Mode</span>
         </div>
       </div>
-      <NavLink
-        className={darkmode ? style.navLinkDarkmode : style.navLink}
-        to="/empresas"
-      >
-        {path}
-      </NavLink>
+      <div className={style.containerBtn}>
+        <NavLink
+          className={darkmode ? style.navLinkDarkmode : style.navLink}
+          to="/empresas"
+        >
+          {path}
+        </NavLink>
+        {location.pathname !== "/" && (
+          <NavLink
+            className={darkmode ? style.navLinkDarkmode : style.navLink}
+            to="/"
+          >
+            {"Volver a intro"}
+          </NavLink>
+        )}
+      </div>
       <Outlet />
     </div>
   )

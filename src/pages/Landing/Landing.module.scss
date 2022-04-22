@@ -28,6 +28,10 @@
              cursor: pointer;
          }
     }
+    .containerBtn{
+        display: flex;
+        justify-content: space-between;
+    }
     .navLinkDarkmode{
         display: inline-block;
         font-size: 20px;

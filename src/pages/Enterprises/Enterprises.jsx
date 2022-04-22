@@ -46,6 +46,7 @@ const Enterprises = () => {
           <div className={style.containerDataGrid}>
             <DataGrid
               className="enterprises-grid"
+              autoHeight={true}
               rows={enterprises}
               columns={enterprisesColumns.concat(anexo)}
               pageSize={9}

@@ -9,6 +9,7 @@ import Landing from "./pages/Landing/Landing"
 import NoPage from "./pages/NoPage/NoPage"
 import Enterprises from "./pages/Enterprises/Enterprises"
 import EnterprisesDetail from "./pages/EnterprisesDetail/EnterprisesDetail"
+import About from "./components/About/About"
 
 function App() {
   const darkmode = useSelector((state) => state.darkmode.darkmode)
@@ -17,7 +18,8 @@ function App() {
       <HashRouter>
         <Routes>
           <Route path="/" element={<Landing />}>
-            <Route index path="empresas" element={<Enterprises />} />
+            <Route index element={<About />} />
+            <Route path="empresas" element={<Enterprises />} />
             <Route
               path="empresas/:nombre_empresa"
               element={<EnterprisesDetail />}
