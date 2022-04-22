@@ -28,27 +28,10 @@
              cursor: pointer;
          }
     }
-    .navLinkDarkmode{
-        display: inline-block;
-        font-size: 20px;
-        padding: 30px 90px;
-        text-decoration: none;
-        color: #fff;
-        font-weight: 700;
+    .containerBtn{
+        display: flex;
+        justify-content: space-between;
     }
-    .navLinkDarkmode:hover{
-        text-decoration: underline;
-    }
-    .navLink{
-        display: inline-block;
-        font-size: 20px;
-        padding: 30px 90px;
-        text-decoration: none;
-        color: #000;
-        font-weight: 700;
-    }
-    .navLink:hover{
-        text-decoration: underline;
-    }
+    
 
 }

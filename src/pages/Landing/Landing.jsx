@@ -3,23 +3,23 @@ import style from "./Landing.module.scss"
 // API CALL
 import { useEffect } from "react"
 import { getAllEnterprises } from "../../redux/apiCalls/getEnterprises"
-import { useDispatch, useSelector } from "react-redux"
+import { useDispatch } from "react-redux"
 // REACT ROUTER OUTLET
 import { Outlet, useLocation } from "react-router"
-import { NavLink } from "react-router-dom"
 // CALL FUNCTION TO FILTER PATH
 import filterPath from "../../helpers/filterPath"
 // CALL FUNCTION TO DARK MODE
 import onSetDarkmode from "../../redux/apiCalls/setDarkmode"
+// IMPORT COMPONENT BTN
+import Btn from "../../components/Btn/Btn"
 
 const Landing = () => {
-  const darkmode = useSelector((state) => state.darkmode.darkmode)
   const location = useLocation()
   const path = filterPath(location)
   // GET ALL ENTERPRISES
   const dispatch = useDispatch()
   useEffect(() => {
-    return () => getAllEnterprises(dispatch)
+    getAllEnterprises(dispatch)
   }, [])
 
   // DARK MODE FUNCTION
@@ -35,12 +35,9 @@ const Landing = () => {
           <span>Dark Mode</span>
         </div>
       </div>
-      <NavLink
-        className={darkmode ? style.navLinkDarkmode : style.navLink}
-        to="/empresas"
-      >
-        {path}
-      </NavLink>
+      <div className={style.containerBtn}>
+        <Btn path={path} location={location} />
+      </div>
       <Outlet />
     </div>
   )
